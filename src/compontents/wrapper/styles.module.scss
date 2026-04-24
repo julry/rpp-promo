@@ -1,0 +1,43 @@
+@use "../../styles/mixins.scss" as *;
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #1E1E1E;
+    background-image: url("../../assets/images/bg.png");
+    overflow: hidden auto;
+    background-size: cover;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+
+    &_content {
+        width: 100%;
+        padding: 0 20px;
+        max-width: 640px;
+        
+        @media screen and (max-width: 350px){
+            padding: 0 15px;
+        }
+
+        @media screen and (max-width: 330px){
+            padding: 0 12px;
+        }
+
+        @include desktop {
+            max-width: 1440px;
+            padding: 0 70px;
+        }
+    }
+    &_svg {
+        position: absolute;
+        top: -2vh;
+        left: -2vh;
+        visibility: hidden;
+    }
+}

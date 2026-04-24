@@ -1,0 +1,26 @@
+@use "../../../styles/mixins.scss" as *;
+
+.block {
+    position: relative;
+    width: 100%;
+   
+    &_content {
+        position: relative;
+        z-index: 2;
+        background-color: var(--color-gray);
+        border-radius: 40px;
+        box-shadow: 0 0 5px 0px white, inset 0 0 0 1px white;
+
+        @include desktop {
+            border-radius: 60px;
+        }
+    }
+
+    &_shining {
+        border-radius: 40px;
+
+        @include desktop {
+            border-radius: 60px;
+        }
+    };
+}

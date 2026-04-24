@@ -1,0 +1,34 @@
+@use "../../styles/mixins.scss" as *;
+
+.info-block {
+    margin-top: 65px;
+
+    &_title {
+        white-space: pre-line;
+        font-size: 30px;
+        margin-bottom: 60px;
+
+        @include desktop {
+            margin-bottom: 70px;
+            font-size: 48px;
+        }
+    }
+
+    &_button {
+        margin-top: 532px;
+        width: 100%;
+        max-width: 510px;
+
+        @include desktop {
+            margin-top: 480px;
+        }
+    }
+
+    @include tablet {
+        margin-top: 80px;
+    }
+
+    @include desktop {
+        margin-top: 100px;
+    }
+}

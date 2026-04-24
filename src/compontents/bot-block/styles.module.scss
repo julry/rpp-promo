@@ -1,0 +1,167 @@
+@use "../../styles/mixins.scss" as *;
+
+.bot-block {
+    position: relative;
+    margin-top: 40px;
+
+    &_oval {
+        display: none;
+
+        @include desktop {
+            display: block;
+            position: absolute;
+            right: -241px;
+            top: -63px;
+            height: 775px;
+            width: 857px;
+        }
+    }
+
+    &_content {
+        z-index: 2;
+        padding: 15px 25px 30px;
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            min-height: 506px;
+            padding: 44px 55px;
+        }
+    }
+
+    & img {
+        object-fit: contain;
+    }
+
+    &_button {
+        margin: 40px auto 0;
+        width: 100%;
+        max-width: unset;
+        
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &_button-desk {
+        display: none;
+
+        @include desktop {
+            display: block;
+            width: 476px;
+            height: 56px;
+            margin-top: auto;
+        }
+    }
+
+    &_images-wrapper {
+        position: absolute;
+        top: 0;
+        right: max(-25%, -80px);
+        z-index: 3;
+
+        @include desktop {
+            top: 14px;
+            right: 56px;
+        } 
+    }
+
+    &_phone-img {
+        width: 244px;
+        height: 343px;
+        transform: rotate(12deg);
+
+        @include desktop {
+            transform: none;
+            width: 407px;
+            height: 571px;
+        }
+    }
+
+    &_title-bot {
+        font-size: 30px;
+        line-height: 115%;
+        text-transform: none;
+        max-width: 280px;
+
+        @include desktop {
+            max-width: unset;
+            font-size: 54px;
+        }
+    }
+
+    &_title-job {
+        margin-top: 203px;
+        line-height: 110%;
+        color: var(--color-orange);
+        margin-bottom: 20px;
+
+        @include desktop {
+            margin-bottom: 40px;
+            margin-top: 0;
+        }
+    }
+
+    &_text {
+        font-size: 14px;
+
+        max-width: 476px;
+
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+
+    &_gift {
+        position: absolute;
+        top: 75px;
+        right: 48px;
+        width: 133px;
+        height: 132px;
+        z-index: 2;
+        
+        @include desktop {
+            top: 147px;
+            right: 98px;
+            width: 205px;
+            height: 203px;
+        } 
+    }
+
+    &_gift-high {
+        position: absolute;
+        top: 148px;
+        right: 76px;
+        width: 132px;
+        height: 122px;
+        transform: rotate(18deg);
+
+        @include desktop {
+            top: 233px;
+            right: 106px;
+            width: 219px;
+            height: 203px;
+        } 
+    }
+
+    &_gift-long {
+        position: absolute;
+        top: 164px;
+        right: 136px;
+        width: 67px;
+        height: 88px;
+        transform: rotate(10deg);
+
+        @include desktop {
+            display: none;
+        } 
+    }
+
+    @include tablet {
+        margin-top: 60px;
+    }
+
+    @include desktop {
+        margin-top: 80px;
+    }
+}

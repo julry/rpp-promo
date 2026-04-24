@@ -1,0 +1,78 @@
+@use "../../styles/mixins.scss" as *;
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    padding-right: 17px;
+    padding-top: 100px;
+    margin-top: -100px;
+    --shown: none;
+
+    @include desktop {
+        padding-right: 30px;
+        min-height: 102px;
+    }
+
+    &_logo {
+        width: 158px;
+        height: 73px;
+        object-fit: contain;
+
+        @media screen and (max-width: 350px){
+            width: 126px;
+            height: 58px;
+        }
+
+        @include desktop {
+            width: 213px;
+            height: 99px;
+            margin-left: 12px;
+        }
+    }
+
+    &_buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &_button-wrapper {
+        position: relative;
+        padding: 1px;
+        @media (hover: hover) {
+            &:hover div{
+                display: block;
+            }
+        }
+    }
+
+    &_button-main {
+        z-index: 2;
+        font-size: 16px !important;
+
+
+        @media (hover: hover) {
+            &:hover {
+                box-shadow: 0 0 5px 0 var(--color-orange);
+            }
+        }
+    }
+
+    &_button-desktop {
+        font-size: 16px !important;
+        display: none !important;
+
+        @include desktop {
+            display: flex !important;
+        }
+    }
+
+    &_button-shining {
+        display: var(--shown);
+        background: var(--color-orange);
+        border-radius: 60px;
+    }
+}
