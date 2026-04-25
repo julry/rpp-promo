@@ -2,7 +2,7 @@
 
 .bot-block {
     position: relative;
-    margin-top: 40px;
+    margin-top: 30px;
 
     &_oval {
         display: none;
@@ -63,6 +63,17 @@
         @include desktop {
             top: 14px;
             right: 56px;
+
+            @media screen and (max-width: 1300px) {
+               right: -80px;
+            }
+
+            @media screen and (max-width: 1200px) {
+               right: -150px;
+            }
+            @media screen and (max-width: 1150px) {
+               right: -200px;
+            }
         } 
     }
 
@@ -158,10 +169,10 @@
     }
 
     @include tablet {
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
     @include desktop {
-        margin-top: 80px;
+        margin-top: 70px;
     }
 }

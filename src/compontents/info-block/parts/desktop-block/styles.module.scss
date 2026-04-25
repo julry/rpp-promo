@@ -1,0 +1,15 @@
+.info-block-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 40px;
+    column-gap: 50px;
+
+    &_card {
+        min-height: 264px;
+
+        & > div{
+            min-height: 100%;
+        }
+    }
+}

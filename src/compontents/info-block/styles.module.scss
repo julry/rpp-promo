@@ -3,6 +3,14 @@
 .info-block {
     margin-top: 65px;
 
+    &_content {
+        min-height: 394px;
+
+        @include desktop {
+            min-height: 570px;
+        }
+    }
+
     &_title {
         white-space: pre-line;
         font-size: 30px;

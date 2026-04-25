@@ -9,7 +9,7 @@
         z-index: 2;
         background-color: var(--color-gray);
         border-radius: 40px;
-        box-shadow: 0 0 5px 0px white, inset 0 0 0 1px white;
+        box-shadow: 0 0 5px 0px var(--color-white), inset 0 0 0 1px var(--color-white);
 
         @include desktop {
             border-radius: 60px;
