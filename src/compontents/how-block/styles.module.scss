@@ -1,6 +1,6 @@
 @use "../../styles/mixins.scss" as *;
 
-.info-block {
+.how-block {
     margin-top: 65px;
 
     &_title {
@@ -15,6 +15,11 @@
     }
 
     &_button {
+        width: 100%;
+        max-width: 510px;
+    }
+
+    &_button-wrapper {
         margin-top: 97px;
         width: 100%;
         max-width: 510px;

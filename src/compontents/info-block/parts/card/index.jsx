@@ -14,7 +14,6 @@ export const Card = ({id, src, title, text, className}) => (
         </p>
         <img className={cn(styles.infoBlockCardImage, {
             [styles.infoBlockCardGift]: id === 'prizes',
-            [styles.infoBlockCardBooks]: id === 'info',
         })}  src={src} alt=""/>
     </Block>
 )

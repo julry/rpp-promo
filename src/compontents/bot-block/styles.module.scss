@@ -43,6 +43,11 @@
         }
     }
 
+    &_button-desk-wrapper {
+        margin-top: auto;
+        width: 476px;
+    }   
+
     &_button-desk {
         display: none;
 
@@ -50,7 +55,6 @@
             display: block;
             width: 476px;
             height: 56px;
-            margin-top: auto;
         }
     }
 

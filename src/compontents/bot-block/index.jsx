@@ -57,7 +57,7 @@ export const BotBlock = () => {
                         <p className={styles.botBlockText}>
                             твой помощник в поиске первой работы — внутри <span className='accent-text'>подарки, вакансии по специальности, лайфхаки</span> и другая полезная инфа для студентов колледжей и техникумов
                         </p>
-                        <Button className={styles.botBlockButtonDesk}>
+                        <Button className={styles.botBlockButtonDesk} wrapperClassName={styles.botBlockButtonDeskWrapper}>
                             переходи в бота!
                         </Button>
                     </div>

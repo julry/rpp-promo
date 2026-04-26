@@ -11,13 +11,37 @@
     padding: 0 20px 2px;
     background: var(--color-orange);
     font-size: 20px;
+    z-index: 2;
 
-    &__secondary {
+    @media (hover: hover) {
+        &:hover {
+            box-shadow: 0 0 5px 0 var(--color-orange);
+        }
+    }
+
+    &_secondary {
         background: transparent;
         @media (hover:hover) {
             &:hover {
                 background: var(--color-orange);
             }
         }
+    }
+
+    &_shining-wrapper {
+        position: relative;
+        padding: 1px;
+
+        @media (hover: hover) {
+            &:hover div{
+                display: block;
+            }
+        }
+    }
+
+    &_shining {
+        display: none;
+        background: var(--color-orange);
+        border-radius: 60px;
     }
 }

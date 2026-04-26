@@ -1,0 +1,39 @@
+.info-block-mobile {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    height: 340px;
+    padding-top: 60px;
+
+    &_card {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_buttons-wrapper {
+        position: absolute;
+        top: -10px;
+        z-index: 5;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        border: 2px solid var(--color-orange);
+    }
+
+    &_button {
+        width: 42px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        & svg {
+            width: 20px;
+            height: 13px;
+        }
+    }
+}

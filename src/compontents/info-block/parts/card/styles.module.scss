@@ -59,36 +59,22 @@
 
     &_image {
         position: absolute;
-        top: -27px;
-        right: -14px;
+        top: -20px;
+        right: -8px;
         object-position: center 0%;
         object-fit: contain;
-        width: 107px;
-        height: 107px;
+        width: 86px;
+        height: 86px;
 
         @include desktop {
             top: -12px;
             right: auto;
             left: -45px;
-
-            transform: scale(0.6);
         }
     }
 
     &_gift {
         transform: rotate(-15deg);
-
-        @include desktop {
-            transform: rotate(-15deg) scale(0.6);
-        }
-    }
-
-    &_books {
-        transform: scale(0.95);
-
-        @include desktop {
-            transform: scale(0.6);
-        }
     }
 
     @include desktop {

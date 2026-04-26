@@ -44,25 +44,9 @@
         gap: 20px;
     }
 
-    &_button-wrapper {
-        position: relative;
-        padding: 1px;
-        @media (hover: hover) {
-            &:hover div{
-                display: block;
-            }
-        }
-    }
-
     &_button-main {
         z-index: 2;
         font-size: 16px !important;
-
-        @media (hover: hover) {
-            &:hover {
-                box-shadow: 0 0 5px 0 var(--color-orange);
-            }
-        }
     }
 
     &_button-desktop {
@@ -72,12 +56,6 @@
         @include desktop {
             display: flex !important;
         }
-    }
-
-    &_button-shining {
-        display: var(--shown);
-        background: var(--color-orange);
-        border-radius: 60px;
     }
 
     &_desktop-text {

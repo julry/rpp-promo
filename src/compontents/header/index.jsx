@@ -16,13 +16,9 @@ export const Header = ({ onScrollToInfo, onScrollToHow }) => (
                 <Button className={styles.headerButtonDesktop} isSecondary onClick={onScrollToHow}>
                     как работает
                 </Button>
-                <div className={styles.headerButtonWrapper}>
-                    <Button className={styles.headerButtonMain} onClick={openBot}>
+                <Button className={styles.headerButtonMain} onClick={openBot}>
                     <span className={styles.headerDesktopText}>Переходи{' '}</span>в бот<span className={styles.headerDesktopText}>а!</span>
-                    </Button>
-                    <Shining className={styles.headerButtonShining}/>
-                </div>
-                
+                </Button>
             </div>
         </Block>
     </div>
