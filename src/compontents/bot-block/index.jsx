@@ -1,10 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 import cn from 'classnames';
-import phone from '../../assets/images/phone.png';
-import ovalBg from '../../assets/images/ovalBg.png';
-import gift from '../../assets/images/gift.png';
-import giftHigh from '../../assets/images/giftHigh.png';
-import giftLong from '../../assets/images/giftLong.png';
+import phone from '../../assets/images/phone.webp';
+import ovalBg from '../../assets/images/ovalBg.webp';
+import gift from '../../assets/images/gift.webp';
+import giftHigh from '../../assets/images/giftHigh.webp';
+import giftLong from '../../assets/images/giftLong.webp';
 import { Block } from '../shared/block';
 import styles from './styles.module.scss';
 import { Button } from '../shared/button';

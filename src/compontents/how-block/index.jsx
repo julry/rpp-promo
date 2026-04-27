@@ -1,6 +1,6 @@
 import {motion, useInView, useMotionValue, useTransform} from 'framer-motion';
 import { Button } from '../shared/button';
-import oval from '../../assets/images/ovalBlock.png';
+import oval from '../../assets/images/ovalBlock.webp';
 import styles from './styles.module.scss';
 import { path } from './constants';
 import { useEffect, useRef, useState } from 'react';

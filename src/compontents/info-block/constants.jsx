@@ -1,9 +1,9 @@
-import prize from '../../assets/images/giftHigh.png';
-import speaker from '../../assets/images/speaker.png';
-import lamp from '../../assets/images/lamp.png';
-import books from '../../assets/images/books.png';
-import gifts from '../../assets/images/severalGifts.png';
-import computer from '../../assets/images/computer.png';
+import prize from '../../assets/images/giftHigh.webp';
+import speaker from '../../assets/images/speaker.webp';
+import lamp from '../../assets/images/lamp.webp';
+import books from '../../assets/images/books.webp';
+import gifts from '../../assets/images/severalGifts.webp';
+import computer from '../../assets/images/computer.webp';
 
 import styles from './styles.module.scss';
 

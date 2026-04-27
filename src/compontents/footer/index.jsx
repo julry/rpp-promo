@@ -1,4 +1,4 @@
-import person from '../../assets/images/man.png';
+import person from '../../assets/images/man.webp';
 import {openBot} from '../../utils/openBot';
 import { Block } from '../shared/block';
 
