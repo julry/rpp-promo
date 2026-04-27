@@ -1,15 +1,15 @@
 @use "../../styles/mixins.scss" as *;
 
 .how-block {
+    position: relative;
+    z-index: 5;
     margin-top: 65px;
 
     &_title {
         white-space: pre-line;
         font-size: 30px;
-        margin-bottom: 60px;
 
         @include desktop {
-            margin-bottom: 70px;
             font-size: 48px;
         }
     }
@@ -20,18 +20,120 @@
     }
 
     &_button-wrapper {
-        margin-top: 97px;
+        margin-top: 137px;
         width: 100%;
         max-width: 510px;
 
         @include desktop {
-            margin-top: 480px;
+            margin-top: 236px;
         }
     }
 
-    &_left-part {
+    &_content {
         position: relative;
+        z-index: 3;
+        max-width: 400px;
+
+        @include desktop {
+            display: flex;
+            max-width: none;
+            justify-content: space-between;
+            padding: 186px 105px 0;
+        }
     }
+
+    &_text-left {
+        margin-top: 98px;
+        white-space: pre-line;
+        max-width: 235px;
+        font-size: 20px;
+
+        @include desktop {
+            font-size: 24px;
+            margin-top: 0;
+            max-width: 315px;
+        }
+    }
+
+    &_text-right {
+        margin-top: 126px;
+        margin-left: auto;
+        white-space: pre-line;
+        max-width: 222px;
+        font-size: 20px;
+
+        @include desktop {
+            margin-top: 0;
+            max-width: 275px;
+            font-size: 24px;
+        }
+    }
+
+    &_oval-left {
+        position: absolute;
+        top: 66px;
+        left: -82px;
+        width: 330px;
+        height: 268px;
+        z-index: 2;
+
+        transform: scale(-1, 1);
+
+        @include desktop {
+            top: 90px;
+            left: -32px;
+            width: 573px;
+            height: 466px;
+        }
+
+        @media screen and (max-width: 360px) {
+            top: 96px;
+        }
+    }
+
+    &_trajectory {
+        position: absolute;
+        top: -100vw;
+        left: -100vw;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &_oval {
+        position: absolute;
+        top: 236px;
+        left: 50px;
+        z-index: 1;
+        width: 160px;
+        height: 131px;
+        object-fit: contain;
+
+        @include desktop {
+            display: none;
+        }
+
+        @media screen and (max-width: 360px) {
+            top: 266px;
+        }
+    }
+
+    &_oval-desk {
+        position: absolute;
+        display: none;
+        z-index: 1;
+        object-fit: contain;
+
+        @include desktop {
+            display: block;
+            top: 160px;
+            left: min(302px, 20vw);
+            width: min(220px, 15vw);
+            height: min(179px, 12.4vw);
+        }
+    }
+
 
     @include tablet {
         margin-top: 80px;

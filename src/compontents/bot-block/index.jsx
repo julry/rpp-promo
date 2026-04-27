@@ -83,7 +83,7 @@ export const BotBlock = () => {
                         src={giftLong} 
                         alt="" 
                         transition={SPRING_TRANSITION}
-                        animate={{x: -220, y: -10, rotate: 25}}
+                        animate={isParentInView ? {x: -250, y: 20, rotate: 25} : {}}
                     />
                 </div>
                 <Button className={styles.botBlockButton}>

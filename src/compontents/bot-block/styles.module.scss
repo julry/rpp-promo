@@ -141,6 +141,10 @@
             width: 205px;
             height: 203px;
         } 
+
+        @media screen and (max-width: 360px) {
+            display: none;
+        }
     }
 
     &_gift-high {
@@ -161,8 +165,8 @@
 
     &_gift-long {
         position: absolute;
-        top: 164px;
-        right: 136px;
+        top: 124px;
+        right: 106px;
         width: 67px;
         height: 88px;
         transform: rotate(10deg);
