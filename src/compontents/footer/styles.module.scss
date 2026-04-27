@@ -24,6 +24,10 @@
             top: -320px;
             width: 244px;
             height: 426px;
+
+            @media screen and (max-width: 1200px){
+                top: -270px;
+            }
         }
     }
     
@@ -93,5 +97,9 @@
 
     @include desktop {
         padding-top: 89px;
+
+        @media screen and (max-width: 1200px){
+            padding-top: 139px;
+        }
     }
 }

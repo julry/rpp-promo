@@ -26,18 +26,29 @@ export const BotBlock = () => {
         switch (type) {
             case "gift": {
                 if (window.innerWidth > 1100) {
-                    return({x: -120, y: -120, rotate: -20});
+                    return ({x: -120, y: -120, rotate: -20});
                 }
 
-                return({x: -50, y: -80, rotate: -20});
+                return ({x: -50, y: -80, rotate: -20});
             }
 
             case "high": {
                 if (window.innerWidth > 1100) {
-                    return({x: -140, y: -10, rotate: -25});
+                    return ({x: -140, y: -10, rotate: -25});
                 }
 
-                return({x: -80, y: -50, rotate: -20});
+                return ({x: -80, y: -50, rotate: -20});
+            }
+
+            case "long": {
+                if (window.innerWidth > 1100) {
+                    return ({});
+                }
+                if (window.innerWidth < 360) {
+                    return ({x: -200, y: 50, rotate: 15});
+                }
+
+                return ({x: -250, y: 20, rotate: 25});
             }
         }
         
@@ -83,7 +94,7 @@ export const BotBlock = () => {
                         src={giftLong} 
                         alt="" 
                         transition={SPRING_TRANSITION}
-                        animate={isParentInView ? {x: -250, y: 20, rotate: 25} : {}}
+                        animate={getGiftAnimation('long')}
                     />
                 </div>
                 <Button className={styles.botBlockButton}>
