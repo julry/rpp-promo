@@ -2,8 +2,7 @@
     font-family: 'KOT-Eitai Gothic';
     src: local('KOT-Eitai Gothic-Bold'), local('KOT Eitai Gothic Bold'),
     local('KOTEitaiGothicBold'), local('KOTEitaiGothic-Bold'),
-    url('../assets/fonts/KOT-EitaiGothic-Bold.ttf') format('truetype'),
-    url('../assets/fonts/KOT-EitaiGothic-Bold.otf') format('opentype');
+    url('../assets/fonts/KOT-EitaiGothic-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
