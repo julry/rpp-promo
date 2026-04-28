@@ -80,7 +80,7 @@ export const HowBlock = ({wrapperRef}) => {
                 transition={{duration: 1.8, ease: 'easeInOut',}}
             />
             <Button className={styles.howBlockButton} wrapperClassName={styles.howBlockButtonWrapper}>
-                кайф я в деле
+                кайф, я в деле
             </Button>
         </div>
     )
