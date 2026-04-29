@@ -1,8 +1,7 @@
 @use "../../styles/mixins.scss" as *;
 
 .wrapper {
-    display: flex;
-    justify-content: center;
+    position: relative;
     height: 100%;
     width: 100%;
     background-color: #1E1E1E;
@@ -17,6 +16,7 @@
     }
 
     &_content {
+        margin: 0 auto;
         width: 100%;
         padding: 0 20px;
         max-width: 640px;
