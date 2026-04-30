@@ -3,6 +3,7 @@ import { Button } from '../shared/button';
 import { DesktopBlock } from './parts/desktop-block';
 import styles from './styles.module.scss';
 import { MobileBlock } from './parts/mobile-block';
+import {openBot} from '../../utils/openBot';
 
 export const InfoBlock = ({wrapperRef}) => {
     const [isDesktop, setIsDesktop] = useState();
@@ -26,7 +27,7 @@ export const InfoBlock = ({wrapperRef}) => {
             <div className={styles.infoBlockContent}>
                {isDesktop ? <DesktopBlock /> : <MobileBlock />}
             </div>
-            <Button wrapperClassName={styles.infoBlockButtonWrapper} className={styles.infoBlockButton}>
+            <Button wrapperClassName={styles.infoBlockButtonWrapper} className={styles.infoBlockButton} onClick={openBot}>
                 быстрее в бот
             </Button>
         </div>

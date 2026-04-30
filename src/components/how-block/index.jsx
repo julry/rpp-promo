@@ -4,6 +4,7 @@ import oval from '../../assets/images/ovalBlock.webp';
 import styles from './styles.module.scss';
 import { path } from './constants';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import {openBot} from '../../utils/openBot';
 
 export const HowBlock = ({wrapperRef}) => {
     const [ovalXDis, setOvalXDis] = useState();
@@ -79,7 +80,7 @@ export const HowBlock = ({wrapperRef}) => {
                 style={{offsetPath: `url("#trajectoryMob")`, offsetRotate: '0deg', x: ovalXDis ?? getSvgSizes()}}
                 transition={{duration: 1.8, ease: 'easeInOut',}}
             />
-            <Button className={styles.howBlockButton} wrapperClassName={styles.howBlockButtonWrapper}>
+            <Button className={styles.howBlockButton} wrapperClassName={styles.howBlockButtonWrapper} onClick={openBot}>
                 кайф, я в деле
             </Button>
         </div>

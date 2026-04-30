@@ -1,10 +1,10 @@
-import {Wrapper} from './compontents/wrapper';
-import {Header} from './compontents/header';
-import { BotBlock } from './compontents/bot-block';
-import {InfoBlock} from './compontents/info-block/index';
-import {HowBlock} from './compontents/how-block/index';
+import {Wrapper} from './components/wrapper';
+import {Header} from './components/header';
+import { BotBlock } from './components/bot-block';
+import {InfoBlock} from './components/info-block/index';
+import {HowBlock} from './components/how-block/index';
 import { useRef } from 'react';
-import { Footer } from './compontents/footer';
+import { Footer } from './components/footer';
 
 function App() {
     const infoBlockRef = useRef();

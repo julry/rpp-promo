@@ -1,2 +1,4 @@
-export const openBot = () => window?.open('https://vk.cc/cWl8Sh', '_blank');
-
+export const openBot = () => {
+    // window?.ym?.(window?.ymId, 'reachGoal', '');
+    window?.open('https://vk.cc/cXiTFO', '_blank');
+}

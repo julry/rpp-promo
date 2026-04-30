@@ -10,6 +10,7 @@ import styles from './styles.module.scss';
 import { Button } from '../shared/button';
 import { useRef } from 'react';
 import {SPRING_TRANSITION} from './constants';
+import {openBot} from '../../utils/openBot';
 
 export const BotBlock = () => {
     const imageWrapperRef = useRef();
@@ -68,7 +69,7 @@ export const BotBlock = () => {
                         <p className={styles.botBlockText}>
                             твой помощник в поиске первой работы — внутри <span className='accent-text'>подарки, вакансии по специальности, лайфхаки</span> и другая полезная инфа для студентов колледжей и техникумов
                         </p>
-                        <Button className={styles.botBlockButtonDesk} wrapperClassName={styles.botBlockButtonDeskWrapper}>
+                        <Button className={styles.botBlockButtonDesk} wrapperClassName={styles.botBlockButtonDeskWrapper} onClick={openBot}>
                             переходи в бота!
                         </Button>
                     </div>
@@ -97,7 +98,7 @@ export const BotBlock = () => {
                         animate={getGiftAnimation('long')}
                     />
                 </div>
-                <Button className={styles.botBlockButton}>
+                <Button className={styles.botBlockButton} onClick={openBot}>
                         открыть бот
                 </Button>
         </div>
